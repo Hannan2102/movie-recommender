@@ -173,7 +173,7 @@ if st.session_state.clicked_movie is not None:
 
     st.markdown("<hr>", unsafe_allow_html=True)
     st.markdown(f"## {movie_details['title']}")
-    st.image(movie_details['poster'], use_column_width=False, width=300)
+    st.image(movie_details['poster'], width=300)
     st.markdown(f"**Tagline:** {movie_details['tagline']}")
     st.markdown(f"**Genres:** {movie_details['genres']}")
     st.markdown(f"**Rating:** {movie_details['rating']}  ⭐")
