@@ -193,6 +193,6 @@ if st.session_state.clicked_movie is not None:
         cast_cols = st.columns(len(cast))
         for idx, cast_col in enumerate(cast_cols):
             with cast_col:
-                st.image(cast[idx]['profile'], use_column_width=True)
+                st.image(cast[idx]['profile'], use_container_width=True)
                 st.markdown(f"**{cast[idx]['name']}**")
                 st.markdown(f"*as {cast[idx]['character']}*")
