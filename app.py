@@ -162,7 +162,7 @@ if st.session_state.recommendations:
     cols = st.columns(5)
     for idx, col in enumerate(cols):
         with col:
-            st.image(posters[idx], use_column_width=True)
+            st.image(posters[idx], use_container_width=True)
             if col.button(names[idx], key=f"recommend_{idx}"):
                 st.session_state.clicked_movie = ids[idx]
 
